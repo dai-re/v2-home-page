@@ -1,0 +1,11 @@
+---
+import { NavBar } from "../global";
+import MainLayout from "../layout/MainLayout.astro";
+import About from "../md/about-me.md";
+---
+
+<MainLayout title={NavBar[1].name}>
+  <main>
+    <About />
+  </main>
+</MainLayout>

@@ -1,0 +1,48 @@
+---
+import "./global.scss";
+import BaseHeader from "../components/BaseHeader.astro";
+import "@fontsource-variable/open-sans";
+import BaseFooter from "../components/BaseFooter.astro";
+
+interface Props {
+  title;
+}
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <script src="./mode.js"></script>
+    <title>{title}</title>
+  </head>
+  <body>
+    <BaseHeader />
+    <div class="container">
+      <slot />
+    </div>
+    <BaseFooter />
+  </body>
+</html>
+
+<style lang="scss">
+  body {
+    font-family: "Open Sans Variable", sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+    line-height: 28px;
+    color: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>

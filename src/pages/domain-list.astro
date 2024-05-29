@@ -1,0 +1,19 @@
+---
+import { myDomainList } from "../global";
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout title="Domain List">
+  <main>
+    <h1>Daftar Domain</h1>
+    <ul>
+      {
+        myDomainList.map((domain) => (
+          <li>
+            <a href={domain.link}>{domain.desc} - {domain.link}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</MainLayout>

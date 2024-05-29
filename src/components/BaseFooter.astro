@@ -1,0 +1,21 @@
+---
+
+---
+
+<footer></footer>
+
+<style>
+  footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
+<script>
+  let rawDate = new Date();
+  let date = rawDate.getFullYear();
+  const footer = document.getElementsByTagName("footer");
+  footer[0].innerHTML = `2024 - ${date}`;
+</script>
