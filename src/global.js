@@ -28,16 +28,21 @@ export const myDomainList = [
   {
     no: 1,
     desc: "v1 Home page",
-    link: "https://daire.eu.org",
+    link: "https://dairew.my.id",
   },
   {
     no: 2,
     desc: "v2 Home page",
-    link: "https://v2.daire.eu.org",
+    link: "https://v2.dairew.my.id",
   },
   {
     no: 3,
     desc: "Blog",
-    link: "https://blog.daire.eu.org",
+    link: "https://blog.dairew.my.id",
+  },
+  {
+    no: 4,
+    desc: "gallery",
+    link: "https://g.dairew.my.id",
   },
 ]
